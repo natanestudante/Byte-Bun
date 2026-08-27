@@ -58,7 +58,7 @@ btnCalcularPedido.addEventListener("click", async function () {
  const recheio = selectRecheio.value;
  const molho = selectMolho.value;
 
- const resposta = await fetch("http://localhost:3000/pedido", {
+ const resposta = await fetch("http://byte-bun-v277.onrender.com/pedido", {
  method: "POST",
  headers: { "Content-Type": "application/json" },
  body: JSON.stringify({ pao: pao, recheio: recheio, molho: molho }),
